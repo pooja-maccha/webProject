@@ -48,6 +48,31 @@ p{
     margin:40p 0;
 }
 
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+
 body{
     width: 100%;
 }
@@ -215,9 +240,10 @@ body{
     border: 1px solid #cce7d0;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
     margin:15px 0;
     transition: 0.2 ease;
+    position: relative;
 }
 
 #products .pro:hover{
@@ -254,19 +280,219 @@ body{
 }
 
 
-#products .pro .des .cart{
+#products .pro  .cart{
     width:40px;
     height:40px;
     line-height: 40px;
     border-radius: 50px;
     font-weight: 500;
     color: #088178;
-    border: 1px;
+    border: 1px solid #cce7d0;
     background-color: #e8f6ea;
     size: 20px;
+    position: absolute;
+    bottom:20px;
+    right:10px;
 }
 #products .pro img{
     width:100%;
     border-radius: 10px;
 
 }
+
+/*Explore start*/
+#explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url('images/banner/explore.jpeg');
+    width:100%;
+    height:40vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#explore h4{
+    color: white;
+    font-size: 16px;;
+}
+#explore h2{
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#explore h2 span{
+    color: #ef3636;
+}
+
+#explore button:hover{
+    background-color: #088178;
+    color:white ;
+}
+
+/*small  banners*/
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+    background-image: url('images/banner.jpg');
+    min-width:48%;
+    height:40vh;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+/* change the banner image here */
+#sm-banner .banner-box-2{
+    background-image: url('images/hero.jpg');
+}
+
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+ 
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+    /* change image */
+    background-image: url('images/banner.jpg');
+    min-width:30%;
+    height:30vh;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* change this image */
+#banner3 .banner-box2{
+    background-image: url('images/banner.jpg');
+}
+
+/* change this image */
+#banner3 .banner-box3{
+    background-image: url('images/banner.jpg');
+}
+
+
+#banner3 h2{
+    color:white;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+#banner3 h3{
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 15px 5px 0 rgba(0,0,0,0.06);
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+ }
+ footer .logo{
+    margin-bottom: 30px;
+ }
+
+ footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+ }
+
+ 
+ footer p{
+    font-size: 13px;
+    margin:0 0 8px 0;
+ }
+
+ footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+ }
+
+ footer .follow{
+    margin-top: 20px;
+ }
+
+ footer .follow i{
+    color: #465b52;
+    cursor: pointer;
+    padding-right: 4px;;
+ }
+
+ footer .install .row images{
+     border: 1px solid #088178;
+     border-radius: 6px;
+ }
+
+ footer .install img{
+    margin: 10px 0 15px 0;
+ }
+
+ footer .follow i:hover,
+ footer a:hover{
+    color: #088178;
+
+ }
+
+.copyright{
+    width:100%;
+    text-align: center;
+    padding: 0 15px 0 15px;
+ }
